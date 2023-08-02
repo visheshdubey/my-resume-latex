@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------------------------------------RESUME STARTS------------------------------------------------
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Vishesh Kumar Dubey} \\ \vspace{1pt}
+    \small +91 88402 24036 $|$ \href{mailto:visheshdubey2016@gmail.com}{\underline{visheshdubey2016@gmail.com}} $|$ 
+    \href{https://github.com/visheshdubey}{\underline{github.com/visheshdubey}} $|$  \href{https:visheshdubey.com}{\underline{visheshdubey.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Uttaranchal Institute of Technology (8.2 CGPA)}{Dehradun, India}
+      {Bachelor of Technology in Computer Science}{Aug. 2017 -- June 2021}
+    \resumeSubheading
+      {St. Josephs School}{Gorakhpur, India}
+      {Intermediate - Maths \& Computer Science}{April. 2015 -- May 2016}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, Typescript, C\#, Python, SQL (Postgres),  HTML/CSS} \\
+     \textbf{Frameworks}{: React.js, Next.js, React Native, Express.js, Node.js, TailwindCSS, Strapi.Js,  framer motion,  Radix UI, Chakra UI } \\
+     \textbf{Developer Tools}{: Git, Docker,  Prisma(ORM), husky, Firebase, Azure Cloud, Azure Server-less functions, VS Code, Visual Studio, Notion, Figma, Eclipse} \\
+     \textbf{Libraries}{: RTK Query, bcrypt, zod, react-hook-form, React Tables }
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Feb 2022 -- Present}
+      {Accenture}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Designed, Build, tested and deployed Azure function Apps, Azure Data Factory, Logic apps using Azure CI/CD Pipelines}
+        \resumeItem{Worked on developing Jump Server to connect to SFTP servers using Azure Web Apps, .NET and Bootstrap 5.0}
+        \resumeItem{Worked with various Azure Cloud technologies such as Serverless Function Apps, Storage accounts, Azure Datalakes, Service Bus/Event Hub triggered function apps.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{OpenHiring} $|$ \emph{Next.Js, Typescript, TailwindCSS, Radix UI, AuthJS, Vercel, Git, }}{June 2023 -- July 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack job portal using \textbf{Next.js, TypeScript,} and Azure Function Apps.}
+            \resumeItem{Integrated \textbf{OPEN AI API (ChatGPT)} to extract job details like title, company, and salary from \textbf{Hacker News postings.}}
+            \resumeItem{Implemented a user-friendly UI with \textbf{Tailwind CSS} and deployed the project on Vercel.}
+            \resumeItem{Secured user access with Google and email/password authentication using \textbf{auth.js}.}
+            \resumeItem{Demonstrated proficiency in front-end and back-end development while leveraging AI-powered APIs for automation.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TRNR} $|$ \emph{ReactNative, Javascript, StrapiJS, AWS EC2 \& S3, Git}}{Sep 2022 -- Jan 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Developed a cross-platform educational app using \textbf{React Native} and \textbf{Expo,} catering to fitness enthusiasts.}
+            \resumeItem{The app featured 300+ products with detailed workout guides and instructional videos for proper exercise techniques.}
+            \resumeItem{Leveraged AWS S3 to efficiently store and stream over 1000 high-quality video assets within the app.}
+            \resumeItem{Implemented a robust backend using \textbf{Strapi.js} and custom APIs to manage user authentication, account creation, and favorite workout bookmarking.}
+             \resumeItem{Deployed the backend on AWS EC2, ensuring smooth app performance and seamless access to educational resources for users.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Microsoft} $|$ \emph{AZ-900 }}{June 2022}
+          
+          \resumeItemListStart
+            \resumeItem{Cloud computing fundamentals, deployment models, and service categories.}
+            \resumeItem{Overview of Microsoft Azure services and solutions like VMs, storage, and Azure AD.}
+          \resumeItemListEnd
+\resumeSubHeadingListEnd
+%
